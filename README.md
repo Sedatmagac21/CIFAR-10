@@ -1,24 +1,15 @@
 CIFAR-10 Görüntü Sınıflandırma Projesi
-Proje Amacı
-Bu proje, CIFAR-10 veri seti kullanılarak bir görüntü sınıflandırma modeli geliştirmeyi amaçlamaktadır. CIFAR-10 veri seti, 32x32 boyutunda 60.000 renkli görüntü içerir ve 10 sınıfa ayrılmıştır (uçak, otomobil, kuş, kedi, köpek, gemi gibi). Amaç, evrişimsel sinir ağları (CNN) kullanarak bu görüntülerin doğru sınıflandırılmasını sağlamaktır.
+Projenin Amacı
 
-Kullanılan Teknolojiler ve Kütüphaneler
-Python: Genel programlama dili.
-TensorFlow & Keras: Modelin oluşturulması, eğitimi ve değerlendirilmesi için kullanılan yüksek seviyeli derin öğrenme kütüphaneleri.
-scikit-learn: Model değerlendirmesi için F1 skoru ve sınıflandırma raporu alınmasında kullanıldı.
-Numpy: Verilerin işlenmesi ve matematiksel işlemler için.
-Matplotlib: Eğitim sonuçlarını görselleştirmek için (isteğe bağlı).
+Bu proje, derin öğrenme teknikleri kullanarak CIFAR-10 veri setindeki 10 farklı nesne sınıfını (uçak, otomobil, kuş, kedi, köpek, gemi, kurbağa, at, gemi, kamyon) doğru bir şekilde sınıflandırmayı hedeflemektedir. Evrişimli sinir ağları (CNN) mimarisi ile geliştirilen model, 32x32 piksel boyutundaki renkli görüntüleri analiz ederek doğru sınıfı tahmin eder.
+
+Kullanılan Teknolojiler
+
+Python: Projenin ana programlama dili.
+TensorFlow & Keras: Derin öğrenme modelinin oluşturulması, eğitimi ve değerlendirilmesi için kullanılmıştır.
+scikit-learn: Model performansının değerlendirilmesi için F1 skoru ve sınıflandırma raporu gibi metriklerin hesaplanmasında kullanılmıştır.
+NumPy: Veri manipülasyonu ve matematiksel işlemler için.
+Matplotlib: Eğitim sonuçlarının görselleştirilmesi için (opsiyonel).
 Veri Seti
-CIFAR-10 veri seti, aşağıdaki 10 sınıfa ait 60.000 görüntüden oluşur:
 
-Uçak
-Otomobil
-Kuş
-Kedi
-Geyik
-Köpek
-Kurbağa
-At
-Gemi
-Kamyon
-Veri seti, 50.000 eğitim ve 10.000 test görüntüsüne bölünmüştür.
+CIFAR-10 veri seti, 60.000 adet 32x32 piksel boyutunda renkli görüntüden oluşur. Bu görüntüler 10 farklı nesne sınıfına ayrılmıştır. Veri seti, modelin eğitimi için 50.000, test edilmesi için ise 10.000 görüntü içerir.
